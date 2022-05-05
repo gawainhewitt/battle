@@ -1,0 +1,17 @@
+require 'sinatra/base'
+require 'sinatra/reloader'
+
+class Battle < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+  end
+
+  #routes
+
+  get '/' do
+    "Hello Battle"
+  end
+
+  # # start the server if this files is executed directly
+  run! if app_file == $0
+end

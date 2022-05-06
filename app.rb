@@ -6,12 +6,10 @@ class Battle < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  #routes
-
   get '/' do
-    "Hello Battle"
+    'Testing infrastructure working!'
   end
 
-  # # start the server if this files is executed directly
   run! if app_file == $0
 end
+

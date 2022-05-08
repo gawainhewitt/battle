@@ -21,11 +21,5 @@ feature 'show score' do
   end
 end
 
-feature 'attack' do
-  scenario 'confirmation of attack' do
-    sign_in_and_play
-    click_button 'Attack'
-    expect(page).to have_content 'confirmation of attack'
-  end
-end
+
 
